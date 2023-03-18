@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background: linear-gradient(45deg,blue,rgb(228, 25, 177));
+            font-family: sans-serif;
+        }
+        div
+        {
+            background-color: white;
+            width: 350px;
+            height: 450px;
+            border-radius: 10px;
+            margin: 100px auto;
+        }
+        body #a
+        {
+            margin-left: 20px;
+            text-align: justify;
+        }
+        body h1
+        {
+            margin-left: 100px;
+
+        }
+        body input
+        {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            width: 320px;
+        }
+        body p
+        {
+            margin-right: 20px;
+        }
+        button
+        {
+            width: 320px;
+            height: 30px;
+            color: white;
+            background: linear-gradient(45deg,blue,rgb(228, 25, 177));
+            border: none;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="a">
+            <h1>Forgot password</h1>
+            <label>Enter mail/Phno</label>
+            <br></br>
+            <input type="text" placeholder="Enter mail/Phno" name="" id="">
+            <br></br>
+            <label>Old Password</label>
+            <br></br>
+            <input type="password" placeholder="Old Password" name="" id="">
+            <br></br>
+            <label>New Password</label>
+            <br></br>
+            <input type="password" placeholder="New Password" name="" id="">
+            <br></br>
+            <button>Reset Your password</button>
+            <a href="{% url 'Mobile:Fourth' %}">Navigate to Fourth html page</a>
+            <br>
+            <a href="{% url 'Mobile:Fifth' %}">Navigate to Fifth html page</a>
+            <br>
+            <a href="{% url 'Mobile:Six' %}">Navigate to Six html page</a>
+        </div>
+    </div>
+</body>
+</html>
